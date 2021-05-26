@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Contenct-Type" contenct="text/html"; charset="UTF-8"/>
+<title>Untitled Document</title>
+<link rel="stylesheet" href="">
+<script type="text/javascript">
+	function add_element(){
+		var masv = document.getElementById('masv').value;
+		var ten = document.getElementById('ten').value;
+		var que = document.getElementById('que').value;
+		var sdt = document.getElementById('sdt').value;
+		if (masv == ''){
+			alert("Ban chua nhap ma sinh vien");
+		}
+		else if (ten== ''){
+			alert("Ban chua nhap ten");
+		}
+		else if (que== ''){
+			alert("Ban chua nhap que");
+		}
+		else if (sdt== ''){
+			alert("Ban chua nhap so dien thoai");
+		}
+		else{
+			var html = '<div style="background:red; margin:5px; padding:5px; color:#FFF">' +masv+ten+que+sdt+'<div>';
+			document.getElementById('result').insertAdjacentHTML('afterend', html);
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>Them the html</h1>
+	<p>Ma sv</p><input type="text" name="" id="mavs" value=""/>
+	<p>Ho ten</p><input type="text" name="" id="ten" value=""/>
+	<p>Que quan</p><input type="text" name="" id="que" value=""/>
+	<p>SDT</p><input type="text" name="" id="sdt" value=""/><br>
+	<input type="button" name="" id="button_add" onclick="add_element()" value="Add"/>
+	<div id="result"></div>
+</body>
+</html>

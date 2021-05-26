@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>Them SV </title>
+<link rel="stylesheet" type="text/css" href="them SV.css">
+<script type="text/javascript">
+
+		function add_element(){
+		var title = document.getElementById('masv').value;
+
+			if (title =='') {
+			alert(" Ban can nhap day du thong tin");
+		}
+		else{
+		var html = '<div margin:5px; padding:5px;>'+title+' </div>';
+		document.getElementById('result1').insertAdjacentHTML('afterend',html);
+	}
+
+	var title = document.getElementById('tensv').value;
+		if (title =='') {
+			alert(" Ban can nhap day du thong tin");
+		}
+		else{
+		var html = '<div margin:5px; padding:5px;>'+title+' </div>';
+		document.getElementById('result2').insertAdjacentHTML('afterend',html);
+	}
+
+
+	var title = document.getElementById('sdt').value;
+		if (title =='') {
+			alert(" Ban can nhap day du thong tin");
+		}
+		else{
+		var html = '<div margin:5px; padding:5px;>'+title+' </div>';
+		document.getElementById('result3').insertAdjacentHTML('afterend',html);
+	}
+
+
+	var title = document.getElementById('diachi').value;
+		if (title =='') {
+			alert(" Ban can nhap day du thong tin");
+		}
+		else{
+		var html = '<div margin:5px; padding:5px;>'+title+' </div>';
+		document.getElementById('result4').insertAdjacentHTML('afterend',html);
+	}
+
+	}
+
+var number = document.getElementById('sdt').value;
+	if (number >length(10)) {
+		document.write("Ban da nhap qua so dien thoai moi ban nhap lai");
+	}
+
+</script>
+</head>
+<body>
+<form>
+	<label>Ma Sv</label><br>
+	<label><input type="text" id="masv" placeholder="" value=""/></label><br><br>
+	<label>Ho ten</label><br>
+	<label><input type="text" id="tensv" placeholder="" value=""/></label><br><br>
+	<label>Que quan</label><br>
+	<label>
+		<select id="Địa chỉ"value="">
+			<option>Ha Noi</option>
+			<option>Hai Phong</option>
+			<option>Da Nang</option>
+			<option>Ho Chi Minh</option>
+		</select>
+	</label><br><br>
+	<label>So dien thoai:</label><br>
+	<label> <input type="text" id="sdt" placeholder="Nhap number phone" maxlength="10" value=""></label><br><br>
+	<input type="button" name="button_add" onclick="add_element()" value="them"/>
+	
+</form></div><br><br><br>
+
+<table border="1px">
+	<tr>
+		<th>Ma Sv</th>
+		<th>Ho va ten</th>
+		<th>Que Quan</th>
+		<th>Dien thoai</th>
+	</tr>
+	<tr>
+		<td ><div id="result1"></td>
+		<td ><div id="result2"></td>
+		<td ><div id="result4"></td>
+		<td ><div id="result3"></td>
+	</tr>
+	<tr>
+		
+	</tr>
+</table>
+</body>
+</html>
