@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tính</title>
+	<script type="text/javascript">
+		function tinhtong() {
+			var a =document.getElementById("soa");
+			var b =document.getElementById("sob");
+			var tong =Number(a.value)+Number(b.value);
+			var kq =document.getElementById("ketqua");
+			kq.value=tong;
+		}
+      function tinhhieu() {
+         var a =document.getElementById("soa");
+         var b =document.getElementById("sob");
+         var hieu =Number(a.value)-Number(b.value);
+         var kq =document.getElementById("ketqua");
+         kq.value=hieu;
+      }
+      function tinhtich() {
+         var a =document.getElementById("soa");
+         var b =document.getElementById("sob");
+         var tich =Number(a.value)*Number(b.value);
+         var kq =document.getElementById("ketqua");
+         kq.value=tich;
+      }
+      function tinhthuong() {
+         var a =document.getElementById("soa");
+         var b =document.getElementById("sob");
+         var thuong =Number(a.value)/Number(b.value);
+         var kq =document.getElementById("ketqua");
+         kq.value=thuong;
+      }
+	</script>
+</head>
+<body style="font-family: arial; background-color: lavender">
+   <h1>Nhập phép tính:</h1>
+   <table>
+   	  <tr>
+   	  	<td>Nhập số a :</td>
+   	  	<td><input type="text" id="soa"></td>
+   	  </tr>
+   	  <tr>
+   	  	<td>Nhập số b:</td>
+   	  	<td><input type="text" id="sob"></td>
+   	  </tr>
+   	  <tr>
+   	  	<td>Kết quả:</td>
+   	  	<td><input type="text" id="ketqua"></td>
+   	  </tr>
+   	  <tr>
+   	  	<td><input type="Button" name="" value="Tính tổng" onclick="tinhtong();"></td>
+         <td><input type="Button" name="" value="Tính hiệu" onclick="tinhhieu();"></td>
+   	  </tr>
+        <tr>
+         <td><input type="Button" name="" value="Tính tích" onclick="tinhtich();"></td>
+         <td><input type="Button" name="" value="Tính thương" onclick="tinhthuong();"></td>
+        </tr>
+   </table>
+</body>
+</html>

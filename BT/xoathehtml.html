@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xóa thẻ html</title>
+    <script language="javascript">
+        window.onload = function(){
+            var button=document.getElementsByTagName('input');
+            for(var i =0;i<button.length;i++){
+                button[i].addEventListener("click",function(){
+                    var parent=this.parentElement.parentElement;parent.remove();
+                });
+            }
+        };
+
+    </script>
+</head>
+<body>
+    <h1>Xóa thẻ HTMl</h1>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td>1</td>
+            <td>Tieu de 1</td>
+            <td>
+                <input type="button" value="Delete"/>
+            </td>
+        </tr>
+
+        <tr>
+        <td>2</td>
+        <td>Tieu de 2</td>
+        <td>
+            <input type="button" value="Delete" />
+        </td>
+        </tr>
+       <tr>
+        <td>3</td>
+        <td>Tieu de 3</td>
+        <td>
+            <input type="button" value="Delete" />
+        </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Contenct-Type" contenct="text/html"; charset="UTF-8"/>
+<title>Untitled Document</title>
+<link rel="stylesheet" href="">
+<script type="text/javascript">
+	function add_element(){
+		var title = document.getElementById('title').value;
+		if (title == ''){
+			alert("Ban chua nhap tieu de");
+		}
+		else{
+			var html = '<div style="background:red; margin:5px; padding:5px; color:#FFF">' +title+'<div>';
+			document.getElementById('result').insertAdjacentHTML('afterend', html);
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>Them the html</h1>
+	<input type="text" name="" id="title" value=""/>
+	<input type="button" name="" id="button_add" onclick="add_element()" value="Add"/>
+	<div id="result"></div>
+</body>
+</html>
